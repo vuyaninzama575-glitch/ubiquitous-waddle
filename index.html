@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Store - Like Shein</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="logo"><h3>FashionStore</h3></a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" id="cartLink">My Cart (0)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to FashionStore</h1>
+    <p>Trendy fashion at affordable prices</p>
+    <button class="btn-primary" onclick="document.getElementById('products').scrollIntoView()">Shop Now</button>
+  </section>
+
+  <section class="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+      <div class="category-item">
+        <h3>Women's Wear</h3>
+        <p>Latest fashion trends</p>
+      </div>
+      <div class="category-item">
+        <h3>Men's Wear</h3>
+        <p>Stylish options</p>
+      </div>
+      <div class="category-item">
+        <h3>Kids</h3>
+        <p>For little ones</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid" id="productList"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 FashionStore. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+        </html>
